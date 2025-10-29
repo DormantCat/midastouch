@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    ports:
+      - "3080:9442"
+    restart: always
+    
+ 
+networks:
+  coolify:
+    external: true
